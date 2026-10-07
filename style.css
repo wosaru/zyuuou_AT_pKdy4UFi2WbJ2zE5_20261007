@@ -1,0 +1,165 @@
+/* ===== 基本 ===== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 14px;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* ===== フィルター全体 ===== */
+#filters {
+  max-width: 970px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #e6e7ed;
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+/* ===== お気に入り横1列固定レイアウト ===== */
+
+#favoriteBox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+/* 入力欄 */
+#favName {
+  flex: 1 1 180px;
+  min-width: 140px;
+}
+
+/* お気に入り選択 */
+#favList {
+  flex: 1 1 220px;
+  min-width: 160px;
+}
+
+/* ボタン共通 */
+#favoriteBox button {
+  flex: 0 0 auto;
+  width: auto;
+  white-space: nowrap;
+  padding: 6px 12px;
+}
+
+/* 条件グループ */
+.filter-group {
+  margin-bottom: 4px;
+  padding: 6px 8px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  background: #d8f0ff;
+}
+
+/* ラベル */
+.filter-group label,
+.filter-group span {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+/* ===== 入力フォーム ===== */
+input,
+select,
+button {
+  font-size: 1.3rem;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+}
+/* フォーカス */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 1px rgba(74,144,226,0.25);
+}
+
+/* ボタン */
+button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 8px;
+}
+
+button:hover {
+  background: #357abd;
+}
+
+/* ===== ギャラリー ===== */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+
+  max-width: 970px;
+  width: 100%;
+  margin: 0;
+}
+
+#gallery img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ===== PC ===== */
+@media (min-width: 768px) {
+  body {
+    font-size: 15px;
+    padding: 18px;
+  }
+
+  #filters {
+    padding: 14px;
+  }
+}
+
+/* ===== スマホ ===== */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 16px; /* iOSズーム防止 */
+  }
+}
+
+.tool-title {
+  max-width: 970px;
+  margin: 4px 0;
+  padding: 4px 4px 4px 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: #ffffff;
+  border: 1px solid #999;
+  border-radius: 10px;
+  text-align: left;
+}
+
